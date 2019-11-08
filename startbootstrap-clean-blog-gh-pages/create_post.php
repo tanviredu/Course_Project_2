@@ -88,7 +88,7 @@
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                             <div class="col-md-10" >
-                                <textarea class="form-control" rows="30" cols="50" id="markItUp"  name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="10"></textarea>
+                                <textarea class="form-control" rows="30" cols="50" id="markItUp"  name="post" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="10"></textarea>
                             </div>
                         </div>
 
