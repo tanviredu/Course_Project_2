@@ -81,7 +81,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="well well-sm">
-                <form class="form-horizontal" method="post">
+                <form class="form-horizontal" action="post_process.php"  method="POST" >
                     <fieldset>
                    
 
@@ -94,7 +94,7 @@
 
                         <div class="form-group">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                <input type="submit" class="btn btn-primary btn-lg">
                             </div>
                         </div>
                     </fieldset>
