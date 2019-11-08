@@ -11,8 +11,6 @@
 
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,26 +34,26 @@
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
-	<link rel="stylesheet" type="text/css" href="/media/css/site-examples.css?_=8ffc0b31bc8d9ff82fbb94689dd1d7ff">
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-	<style type="text/css" class="init">
-	
-	</style>
-	<script type="text/javascript" src="/media/js/site.js?_=df7cd4213eec7fc146048acf402cae00"></script>
-	<script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fbasic_init%2Fzero_configuration.html" async></script>
-	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
-	<script type="text/javascript" class="init">
-	
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+  <link rel="stylesheet" type="text/css" href="/media/css/site-examples.css?_=8ffc0b31bc8d9ff82fbb94689dd1d7ff">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <style type="text/css" class="init">
+  
+  </style>
+  <script type="text/javascript" src="/media/js/site.js?_=df7cd4213eec7fc146048acf402cae00"></script>
+  <script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fbasic_init%2Fzero_configuration.html" async></script>
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+  <script type="text/javascript" class="init">
+  
 
 $(document).ready(function() {
-	$('#example').DataTable();
+  $('#example').DataTable();
 } );
 
 
-	</script>
+  </script>
 
 </head>
 
@@ -83,10 +81,10 @@ $(document).ready(function() {
   <hr>
 
   <table id="example" class="table table-hover" style="width:100%">
-		  <?php
+      <?php
         // here gors the query
         // make the sql
-      $sql = "SELECT * FROM post WHERE username='$username';";
+      $sql = "SELECT * FROM post ;";
       $result = $connection->query($sql);
       while($row = mysqli_fetch_array($result)){
 
@@ -97,36 +95,31 @@ $(document).ready(function() {
 
 
 
-    			<thead>
-						<tr>
+          <thead>
+            <tr>
               <th>ID</th>
-							<th>username</th>
-							<th>Post Link</th>
-							<th>Date</th>
-              <th>Delete</th>
+              <th>username</th>
+              <th>Post Link</th>
+              <th>Date</th>
+         
                             
-							
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><?php echo $row['id'] ?></td>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><?php echo $row['id'] ?></td>
               <td><?php echo $row['username'] ?></td>
               <td><a href="showpost.php?id=<?php echo $row['id']; ?>"><?php echo substr($row['post'], 0, 70);?></a></td>
               
               <td><?php echo $row['date'] ?></td>
-							
-                            <td>
-                                <form>
-                                    <button class='btn btn-danger'>Delete </button>
-                                </form>
-                            </td>
+              
                             
-							
-						</tr>
-						
-					</tbody>
-					<tfoot>
+              
+            </tr>
+            
+          </tbody>
+          <tfoot>
                     <tr>
 
 
@@ -134,20 +127,20 @@ $(document).ready(function() {
       }
         ?>
               <th>ID</th>
-							<th>username</th>
-							<th>Post</th>
-							<th>Date</th>
-              <th>Delete</th>
+              <th>username</th>
+              <th>Post</th>
+              <th>Date</th>
+              
                             <!-- jodi session na thake toile page
                             jeno aumetically login e chole ase se kaj
                             if(!isset($_SESSION['name'])){
                                 header('login.php');
                             }
                              -->
-							
-						</tr>
-					</tfoot>
-				</table>
+              
+            </tr>
+          </tfoot>
+        </table>
 
 
 

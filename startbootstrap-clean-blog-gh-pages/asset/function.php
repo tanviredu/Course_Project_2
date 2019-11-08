@@ -5,6 +5,9 @@
         public function redirect($url){
             return header("Location: $url");
         }
+
+
+        public function delete_post($id)
     }
     $func = new functions;
     // testing
