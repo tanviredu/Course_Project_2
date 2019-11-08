@@ -147,6 +147,12 @@ $(document).ready(function() {
 							<th>Post</th>
 							<th>Date</th>
                             <th>Delete</th>
+                            <!-- jodi session na thake toile page
+                            jeno aumetically login e chole ase se kaj
+                            if(!isset($_SESSION['name'])){
+                                header('login.php');
+                            }
+                             -->
 							
 						</tr>
 					</tfoot>
