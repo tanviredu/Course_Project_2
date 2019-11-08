@@ -7,7 +7,7 @@
         }
 
 
-        public function delete_post($id)
+        public function delete_post($id){}
     }
     $func = new functions;
     // testing

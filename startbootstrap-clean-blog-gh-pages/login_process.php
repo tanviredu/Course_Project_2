@@ -15,7 +15,7 @@
        echo "You are not user";
      }else{
        $_SESSION['username'] = $username;
-       $func->redirect('index.php');
+       $func->redirect('home.php');
      }    
 
   
