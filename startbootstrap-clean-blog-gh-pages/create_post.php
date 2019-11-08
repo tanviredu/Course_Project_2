@@ -94,7 +94,7 @@
 
                         <div class="form-group">
                             <div class="col-md-12 text-center">
-                                <input type="submit" class="btn btn-primary btn-lg">
+                                <input type="submit" class="btn btn-primary btn-lg" name='submit' value="Post">
                             </div>
                         </div>
                     </fieldset>
