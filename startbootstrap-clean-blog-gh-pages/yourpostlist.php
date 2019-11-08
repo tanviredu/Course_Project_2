@@ -73,7 +73,7 @@ $(document).ready(function() {
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1><?php echo "Welcome ".$_SESSION['username']; ?></h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <span class="subheading">A Blog project for Beacon IT</span>
           </div>
         </div>
       </div>
@@ -110,18 +110,12 @@ $(document).ready(function() {
 					</thead>
 					<tbody>
 						<tr>
-							<td><?php echo $row['id'] ?></td>
+							<td><?php echo $row['id']; ?></td>
               <td><?php echo $row['username'] ?></td>
               <td><a href="showpost.php?id=<?php echo $row['id']; ?>"><?php echo substr($row['post'], 0, 70);?></a></td>
               
               <td><?php echo $row['date'] ?></td>
-							
-                            <td>
-                                <form>
-                                    <button class='btn btn-danger'>Delete </button>
-                                </form>
-                            </td>
-                            
+						<td><a href="yourpostlist.php?id=<?php echo $row['id']; ?>"><button class="btn btn-danger">DELETE</button></a></td>                            
 							
 						</tr>
 						
@@ -151,6 +145,14 @@ $(document).ready(function() {
 
 
 
+
+<?php 
+    if(isset($_GET['id'])){
+      $id = $_GET['id'];
+      $func->delete_post($id);
+
+    }
+?>
 
 
 
