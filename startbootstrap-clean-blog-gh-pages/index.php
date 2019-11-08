@@ -43,7 +43,10 @@
             <a class="nav-link" href="create_post.php">Create Post</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="post.html">Post List</a>
+            <a class="nav-link" href="post.html">All Post List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="yourpostlist.php">Your Post List</a>
           </li>
           
           <li class="nav-item">
