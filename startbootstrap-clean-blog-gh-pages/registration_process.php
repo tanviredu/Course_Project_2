@@ -28,7 +28,7 @@
                 $reg->make_registration($username,$email,$password);
                 //echo "Registration complete";
                 //echo "Welcome ".$username;
-                $func->redirect('login.php');
+                $func->redirect('index.php');
             }else{
                 echo "User is already exists";
             }
