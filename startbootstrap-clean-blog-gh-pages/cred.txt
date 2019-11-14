@@ -10,15 +10,9 @@ passwordTanvir123
 
 hosting app account
 username: epiz_24766495!
-passwordtanvir123
+passwordTanvir123
 
 mysql_username: epiz_24766495
 mysql_hostname : sql111.epizy.com
-password: Ptjvr37KlSPY2P8
-
-
-
-cpanel password : Ptjvr37KlSPY2P8
-
-
-domain:  http://beaconprojecttanvir.cf/
+password: same as cpanel password
+db_name: 
